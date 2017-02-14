@@ -1,1 +1,2 @@
-php artisan key:generate : To set new application key.
+php artisan key:generate  = To set new application key.
+php artisan make:migration <table_name> = To create new table 
