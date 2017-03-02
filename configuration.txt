@@ -2,7 +2,7 @@ php artisan key:generate  = To set new application key.
 php artisan make:migration <table_name> = To create new table 
 php artisan migrate  = To run new migrations
 
-php artisan make:model <Model> = corresponding model 
+php artisan make:model <Model> path = corresponding model 
 
 php artisan make:seeder UsersTableSeeder  : to make seeder
 
@@ -14,3 +14,9 @@ Killed error on server
 	/sbin/mkswap /var/swap.1
 
 	/sbin/swapon /var/swap.1
+
+You need to add the path to your migrations folder to the classmap array. Then run the following three commands...
+
+		php artisan clear-compiled 
+		composer dump-autoload
+		php artisan optimize
