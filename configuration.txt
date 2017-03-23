@@ -22,3 +22,6 @@ You need to add the path to your migrations folder to the classmap array. Then r
 		php artisan optimize
 
 protected $connection = 'connection-name'; // to access new connection from schema
+
+
+php artisan tinker
