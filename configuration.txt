@@ -25,3 +25,8 @@ protected $connection = 'connection-name'; // to access new connection from sche
 
 
 php artisan tinker
+
+
+
+------APACHE
+To check status: service apache2 status
