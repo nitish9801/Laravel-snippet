@@ -26,7 +26,10 @@ protected $connection = 'connection-name'; // to access new connection from sche
 
 php artisan tinker
 
-
+use ::with(array('functionName'=> function($query) use $variable{ $query->get();}))->get();
 
 ------APACHE
 To check status: service apache2 status
+
+
+
