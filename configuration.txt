@@ -2,6 +2,8 @@ php artisan key:generate  = To set new application key.
 php artisan make:migration <table_name> = To create new table 
 php artisan migrate  = To run new migrations
 
+ php artisan cache:clear
+
 php artisan make:model <Model> path = corresponding model 
 
 php artisan make:seeder UsersTableSeeder  : to make seeder
