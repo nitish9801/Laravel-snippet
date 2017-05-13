@@ -2,6 +2,9 @@ php artisan key:generate  = To set new application key.
 php artisan make:migration <table_name> = To create new table 
 php artisan migrate  = To run new migrations
 
+sudo chgrp -R www-data storage bootstrap/cache
+sudo chmod -R ug+rwx storage bootstrap/cache
+
  php artisan cache:clear
 
 php artisan make:model <Model> path = corresponding model 
@@ -33,6 +36,10 @@ use ::with(array('functionName'=> function($query) use $variable{ $query->get();
 connect to multiple database :
     protected $connection = 'mysql_auth';
     or setConnection('mysql_auth')
+
+
+SQL query log
+dd(DB::getQueryLog())
 
 ------APACHE
 To check status: service apache2 status
